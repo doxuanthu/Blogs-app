@@ -1,0 +1,16 @@
+.detail-blog img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.detail-blog {
+    color: #333;
+}
+
+.detail-blog h2 {
+    text-align: center;
+}
+
+.detail-blog h2:first-child {
+    text-align: left;
+}

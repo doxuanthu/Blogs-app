@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #e84747;
+}
+
+html {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial
+}
+
+body {
+    background-color: #000;
+}
+
+.search-input span:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* ------------- */
+/* Navigation */
+.navbar-collapse .nav-item:hover {
+    background: var(--primary-color)
+}
+
+@media screen and (max-width: 991px) {
+    nav.navbar:hover {
+        cursor: pointer;
+    }
+
+    .navbar-collapse .nav-item {
+        border: 1px solid;
+        border-color: #fff transparent;
+    }
+}
+
+/* ------------- */
+/* Carousel */
+.carousel-item {
+    padding: 0 0 40px;
+}
+
+.carousel-item img {
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.carousel-control-prev i {
+    left: 0;
+}
+
+.carousel-control-next i {
+    right: 0;
+}
+
+/* ------------- */
+/* Go head button */
+#goHead {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#goHead span {
+    color: #888;
+    opacity: 0.6;
+    background: rgba(0, 0, 0, .1);
+    padding: 16px;
+    font-weight: bold;
+}
+
+#goHead span:hover {
+    opacity: 1;
+    color: #333;
+    background: #666;
+}
+
+/* ------------- */
+/* Footer */
+footer .copyright {
+    background-color: #3d3d3d;
+}
+
+footer .copyright p:hover {
+    color: #fff !important;
+}

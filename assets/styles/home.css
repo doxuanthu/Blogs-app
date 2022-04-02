@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #e84747;
+}
+
+.list-blogs .side-info {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.list-blogs .side-info a,
+.list-trailers .side-info a {
+    color: #333;
+}
+
+.list-blogs .side-info :nth-child(2),
+.list-trailers .side-info :nth-child(2) {
+    position: relative;
+    display: inline-block;
+}
+
+.list-blogs .side-info span:nth-child(2)::after,
+.list-trailers .side-info span:nth-child(2)::after {
+    content: "";
+    display: block;
+    height: calc(100% - 4px);
+    border-left: 1px solid #888;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -6px;
+}
+
+.list-blogs .side-info span:nth-child(2)::before,
+.list-trailers .side-info span:nth-child(2)::before {
+    content: "";
+    display: block;
+    height: calc(100% - 4px);
+    border-right: 1px solid #888;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -6px;
+}
+
+.list-blogs .card-body .btn-danger:hover,
+.list-trailers .card-body .btn-danger:hover {
+    background: #333;
+    color: #fff !important;
+    border: none;
+}
+
+.list-blogs .card-body .btn-dark:hover,
+.list-trailers .card-body .btn-dark:hover {
+    background: var(--primary-color);
+    color: #333;
+    border: none;
+}
